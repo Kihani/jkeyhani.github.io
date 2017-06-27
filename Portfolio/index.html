@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>James Keyhani Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .bg-1 {
+            background-color: #34387F;
+            color: #ffffff;
+        }
+        .bg-2 {
+            background-color: #474e5d;
+            color: #ffffff;
+        }
+        .bg-3 {
+            background-color: #555555;
+            color: #ffffff;
+        }
+        .bg-4 {
+            background-color: #7F2626;
+            color: #ffffff;
+        }
+        .bg-5 {
+            background-color: #2f2f2f;
+            color: #ffffff;
+        }
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0; 
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
+        }
+        .text-left {
+            padding-left: 220px;
+        }
+        #img-col {
+            margin-top: 30px;
+            padding-right: 250px;
+            border-left-style: solid;
+        }
+        #max-img {
+            padding-top: 40px;
+        }
+        #squad-img {
+            padding-top: 20px;
+        }
+        #aboutMe-txt {
+            text-align: justify;
+            margin-right: 100px;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+        p {
+            font-size: 16px;
+        }
+        .margin {
+            margin-bottom: 45px;
+        }
+        #butn-spacing {
+            margin-top: 30px;
+            margin-left: 185px
+        }
+        #gear {
+            margin-top: 30px;
+            padding-left: 280px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand" href="#me">James Keyhani</a>    
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid bg-1 text-center">
+    <h3 class="margin" id="me">Who Am I?</h3>
+    <img src="profile-pic.jpg" class="img-circle img-responsive" style="display:inline" alt="Me" width="350" height="350">
+    <h3>Developer/Student</h3>
+</div>
+
+<div class="container-fluid bg-2 text-center">
+    <h3 class="margin" id="portfolio">Portfolio</h3>
+    <div class="row">
+        <div class="col-sm-6 text-left" style="border-right-style: solid">
+            <h4 class="margin" style="margin-left: 150px">Carl Sagan Tribute Page</h4>
+            <div><a href="https://codepen.io/jkeyhani/full/vZLQaK/" target="_blank"><img src="Tribute-Page.png" class="img-responsive" alt="Tribute Page" width="500" height="500"></a></div>
+            <a href="https://codepen.io/jkeyhani/full/vZLQaK/" class="btn btn-default btn-lg" target="_blank" id="butn-spacing">Page Link</a>
+        </div>
+        <div class="col-sm-6">
+            <h2 class="text-center">More Projects in the Works...</h2>
+            <div id="gear"><img src="gear.jpg" class="img-responsive" alt="gear" width="350" height="350"></div>
+        </div>
+    </div>    
+</div>
+
+<div class="container-fluid bg-3 text-center">
+    <h3 class="margin" id="about-me">About Me</h3>
+    <div class="row">
+        <div class="col-sm-6">
+            <h4 class="text-left">Description:</h4>
+            <p class="text-left" id="aboutMe-txt">I'm currently a college student at the University of Utah, pursuing a B.S. in Computer Science with E.A.E. (Emphasis in Arts and Entertainment). 
+            On the side I'm also going through the Free Code Camp curriculum to gain their Front End Development certificate to help add some diversity to my set of skills. 
+            During my free time I like to take my puppy Max out to the local parks and hikes. 
+            Please take a look at my portfolio and feel free to contact me! </p>
+            <div class="text-left" id="squad-img"><img src="The-Squad2.jpg" class="img-responsive img-thumbnail" alt="Image" width="500" height="500"></div>
+        </div>
+        <div class="col-sm-6" id="img-col">
+            <div><img src="Out-With-Max.jpg" class="img-responsive img-thumbnail" alt="Image" width="400" height="400"></div>
+            <div id="max-img"><img src="Max.jpg" class="img-responsive img-thumbnail" alt="Image" width="400" height="400"></div>     
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid bg-4 text-center">
+    <h3 class="margin" id="contact">Contact Me</h3>
+    <div class="container">
+        <form>
+        <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="name" class="form-control" id="name" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+        <label for="phone-number">Phone Number:</label>
+        <input type="phone-number" class="form-control" id="phone-number" placeholder="Enter phone number">
+        </div>
+        <div class="form-group">
+        <label for="message">Message:</label>
+        <input type="message" class="form-control" id="message" placeholder="Enter message">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    </div>
+</div>
+
+<footer class="container-fluid bg-5 text-center">
+    <p>Made by: James Keyhani</p>
+</footer>
+
+</body>
+</html>
